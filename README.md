@@ -1,7 +1,12 @@
-# network-map
+# Voltempo charging network live map
 With our interactive map, you simply type in a place name or postcode and you will find out where all the HGV EV charging points are across the UK network.
 
 Live map visualization of EV and HGV charging infrastructure, powered by Voltempo’s advanced data platform.
+
+
+<img width="646" height="392" alt="Screenshot 2025-07-30 at 12 52 11" src="https://github.com/user-attachments/assets/db0fc6b3-65bd-4013-b612-0356e084d538" />
+
+
 
 🚀 Overview
 This project provides a real-time interactive map of EV (Electric Vehicle) and HGV (Heavy Goods Vehicle) charging stations across the UK (or other regions as applicable). Designed to support fleet operators, logistics managers, and EV drivers, the map integrates live data streams and user-friendly visualization tools.
@@ -24,7 +29,7 @@ Frontend: Angular, Google maps
 
 Backend (optional): Node.js, Express, WebSocket for real-time updates
 
-Data Sources: Voltempo APIs, OpenChargeMap, custom integrations
+Data Sources: Voltempo APIs, Google maps, custom integrations
 
 Hosting: AWS 
 
@@ -33,16 +38,12 @@ bash
 Copy
 Edit
 git clone https://github.com/voltempo/
-cd live-charging-map
+cd 
 npm install
 npm start
 Environment variables (create a .env file):
 
-env
-Copy
-Edit
-REACT_APP_MAPBOX_TOKEN=your_mapbox_token
-REACT_APP_API_URL=https://api.voltempo.com/v1/chargers
+
 📁 Project Structure
 bash
 Copy
@@ -60,7 +61,7 @@ Use npm run lint to check code quality
 
 Consider running mock APIs locally during development
 
-Ensure proper Mapbox token usage to avoid quota overruns
+Ensure proper google maps token usage to avoid quota overruns
 
 ✅ To Do
  Add user route planning for EVs/HGVs
