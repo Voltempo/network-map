@@ -1,0 +1,35 @@
+<form class="relative flex items-center gap-8">
+  <div class="relative flex items-center gap-10">
+    <div>
+      <span class="sr-only">Search</span>
+      <div
+        #searchContainer
+        class="autocomplete-container border border-slate-800 rounded-sm focus:outline-none focus:ring-3 focus:ring-[#001489] focus:border-[#001489] transition-all"
+      ></div>
+    </div>
+
+    <button
+      class="cursor-pointer flex flex-col hover:bg-slate-200 p-2 rounded-sm items-center gap-1 h-[60px] w-[80px] box-border"
+      (click)="handleFilterClick($event)"
+    >
+      <ng-icon name="featherFilter" class="text-lg" />
+      <span class="text-sm">Filters</span>
+    </button>
+
+    <button
+      class="cursor-pointer flex flex-col hover:bg-slate-200 p-2 rounded-sm items-center gap-1 h-[60px] w-[80px] box-border"
+      (click)="handleDirectionsClick($event)"
+    >
+      <ng-icon name="featherNavigation2" class="text-lg" />
+      <span class="text-sm">Directions</span>
+    </button>
+
+    <button
+      class="cursor-pointer flex flex-col hover:bg-slate-200 p-2 rounded-sm items-center gap-1 h-[60px] w-[80px] box-border z-10"
+      (click)="handleDirectionsClick($event)"
+    >
+      <ng-icon name="featherKey" class="text-lg" />
+      <span class="text-sm">Map Key</span>
+    </button>
+  </div>
+</form>

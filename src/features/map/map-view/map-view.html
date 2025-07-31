@@ -1,0 +1,10 @@
+<div class="flex h-full">
+  <div class="h-full w-full">
+    <div id="map" class="w-full h-full"></div>
+    <app-map-drawer-panel
+      [selectedCharger]="selectedCharger"
+      [visible]="showPanel"
+      (closePanel)="showPanel = false"
+    />
+  </div>
+</div>
